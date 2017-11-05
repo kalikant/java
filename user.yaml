@@ -1,0 +1,7 @@
+# yamal configuration for table
+
+database 			: sparkdb
+tableName 			: employee
+tableType			: external
+hdfsDataLocation	: /data/dev/hadoop/user
+columnList			: id int,name string,age int
