@@ -1,0 +1,62 @@
+public class TableConfig {
+	
+	private String database;
+	private String tableName; 			
+	private String tableType;			
+	private String hdfsDataLocation;	
+	private String columnList;
+	private String partitionedBy;
+	private String storedAs;
+	private String fieldsTerminatedBy;
+	
+	public String getFieldsTerminatedBy() {
+		return fieldsTerminatedBy;
+	}
+	public void setFieldsTerminatedBy(String fieldsTerminatedBy) {
+		this.fieldsTerminatedBy = fieldsTerminatedBy;
+	}
+	public String getDatabase() {
+		return database;
+	}
+	public void setDatabase(String database) {
+		this.database = database;
+	}
+	public String getTableName() {
+		return tableName;
+	}
+	public String getPartitionedBy() {
+		return partitionedBy;
+	}
+	public void setPartitionedBy(String partitionedBy) {
+		this.partitionedBy = partitionedBy;
+	}
+	public String getStoredAs() {
+		return storedAs;
+	}
+	public void setStoredAs(String storedAs) {
+		this.storedAs = storedAs;
+	}
+	public void setTableName(String tableName) {
+		this.tableName = tableName;
+	}
+	public String getTableType() {
+		return tableType;
+	}
+	public void setTableType(String tableType) {
+		this.tableType = tableType;
+	}
+	public String getHdfsDataLocation() {
+		return hdfsDataLocation;
+	}
+	public void setHdfsDataLocation(String hdfsDataLocation) {
+		this.hdfsDataLocation = hdfsDataLocation;
+	}
+	public String getColumnList() {
+		return columnList;
+	}
+	public void setColumnList(String columnList) {
+		this.columnList = columnList;
+	}			
+	
+	
+}
