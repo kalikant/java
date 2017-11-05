@@ -1,3 +1,7 @@
+/*
+this helper class has been written to convert .xls and .xlsx files into csv format 
+*/
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
@@ -224,14 +228,9 @@ public class excel2csv {
 												.getDateCellValue().toString())
 												+ columnSeperator;
 									else
-									{
-										tupple += cell.getNumericCellValue()  + columnSeperator;
+										tupple += cell.getNumericCellValue() + columnSeperator;
 										//tupple += objHSSFDataFormatter.formatCellValue(cell)
 										//+ columnSeperator;
-										//tupple += cell.getStringCellValue() + columnSeperator; 
-									//tupple += cell.getStringCellValue(). + columnSeperator; 
-									System.out.println(String.valueOf(tupple));
-									}
 								}
 								else if (CELL_TYPE == Cell.CELL_TYPE_STRING)
 									tupple +=  cell.getStringCellValue()
